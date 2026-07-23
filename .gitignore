@@ -1,0 +1,9 @@
+data/
+figures/
+outputs/
+scratch/
+__pycache__/
+temp.ipynb
+*.mat
+*.DS_Store
+.vscode/

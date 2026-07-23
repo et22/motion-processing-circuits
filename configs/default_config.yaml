@@ -1,0 +1,65 @@
+dataset_params:
+  dates: ['020525', '020725', '021825', '021925', '040925', '041125', '041625', '041825', '042425', '042525', '042825', '121025', '121125', '121625', '121725', '121825', '121925', '052926', '060326', '070126']
+  monkeys: ['A', 'H']
+  dates_A: ['121625', '121725', '121825', '121025', '121125', '020525', '020725', '021825', '021925', '040925', '041125', '041625', '041825', '052926', '060326', '070126']
+  dates_H: ['121925', '042425', '042525', '042825']
+  dates_main: ['121025', '121125', '121625', '121725', '121825', '121925', '052926', '060326', '070126']
+  dates_supplement: ['020525', '020725', '021825', '021925', '040925', '041125', '041625', '041825', '042425', '042525', '042825']
+  dates_A_main: ['121025', '121125', '121625', '121725', '121825', '052926', '060326', '070126']
+  dates_H_main: ['121925']
+  dates_A_supplement: ['020525', '020725', '021825', '021925', '040925', '041125', '041625', '041825']
+  dates_H_supplement: ['042425', '042525', '042825']
+  dates_fracture: ['121025', '121125', '121625', '121725', '121825', '121925', '021825', '021925', '040925', '041125', '041625', '041825', '042525', '042825', '052926', '060326']
+  dates_fracture_main: ['121025', '121125', '121625', '121725', '121825', '121925', '052926', '060326']
+  dates_fracture_supplement: ['021825', '021925', '040925', '041125', '041625', '041825', '042525', '042825']
+  dates_video: ['012925', '013025', '013125', '020425', '021125', '042425', '042525','121825', '121925', '070126']
+  data_path: ./data/
+
+neuron_params:
+  rate_thr: 5.0
+  alpha_thr: 0.05
+  dsi_thr: 0.25
+  neuron_y_thr: 2000
+  video_rel_thr: 0.5
+  exclude_as: True
+
+ccg_params: # see English et al. 2017, either 0.01 & 0.01 or 0.001 & 0.0026 were used 
+  ac_range: [-5, 0]
+  sig_range: [1, 5]
+  p_fast_crit: 0.01 
+  p_caus_crit: 0.01 
+  min_coinc: 10
+  maxlag: 30
+  hollow_frac: 0.6
+  kernel_stdev: 10
+  kernel_clip: 20
+  start_time: 100
+  trial_type: "all"
+  ccg_dur: 150
+
+analysis_params:
+  start_time_fr: 30
+  patcomp_split: 1.28 # 1.28 and -1.28 as pattern and component thresholds
+  fsrs_split: 200     # microseconds
+  prestim_time: 100   # milliseconds
+  poststim_time: 100  # milliseconds
+  rf_fit_crit: 0.5    # minimum explained variance for successful RF fit
+
+stimulus_params: 
+  probe: 100 # ms duration
+  plaid: 250 # ms duration
+  video: 200 # ms duration
+  plaidv2: 1200 # ms duration
+
+dir_module_fig_params: 
+  ex_sess_id: "121725"
+  ex_neuron_id: 64
+  psth_smooth_ms: 10
+
+fractures: 
+  thr_frac_deg: 100.0
+  thr_frac_sim: 50.0
+  max_frac_dist: 500.0
+  frac_bin_size: 100.0
+  frac_n_perm: 5000
+  frac_seed: 0
