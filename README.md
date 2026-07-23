@@ -6,7 +6,7 @@ This repository contains the code for the following manuscript:
 Trepka et al., (2026) A modular neural circuit for computing the motion of objects. bioRxiv. https://www.biorxiv.org/content/10.64898/2026.06.07.730718v1
 
 <p align="center">
-  <img src="https://github.com/et22/motion-processing-circuits/blob/maunscript/assets/figure1.png?raw=true" alt="Figure 1" width="750">
+  <img src="https://github.com/et22/motion-processing-circuits/blob/main/assets/figure1.png?raw=true" alt="Figure 1" width="750">
 </p>
 
 ## Code
