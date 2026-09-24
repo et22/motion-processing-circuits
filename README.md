@@ -33,6 +33,9 @@ Finally, run the bash script:
 bash run_all.sh
 ```
 
+### Demo 
+We provide a demonstration notebook to illustrate the pattern/component neuron classification in ```demo.ipynb```. This can be run locally as a Jupyter notebook or in Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/et22/motion-processing-circuits/blob/main/demo.ipynb). The notebook will execute in less than a minute and reproduce tuning curves and neuron classification for the example neurons in Figure 2 of the manuscript.
+
 ### Code organization
 The code is divided into ```configs/```, ```analysis/```, and ```plotting/``` directories. The scripts in ```analysis/```save intermediate results for later use in ```plotting/``` and relevant parameters and paths are defined in ```configs/```. ```run_all.sh``` demonstrates the order in which scripts should be run to reproduce results. The most important scripts are highlighted below: 
 
