@@ -22,7 +22,7 @@ data/
     └── ...
 ```
 
-Next, install the required dependencies: 
+Next, install the required dependencies (install time < 5 min): 
 
 ```bash
 pip install -r requirements.txt
@@ -46,6 +46,9 @@ The code is divided into ```configs/```, ```analysis/```, and ```plotting/``` di
 ```plotting/plot_tuning_heatmap.py``` plots tuning curves over space along the probe.
 
 The ```preprocessing/``` directory is provided for reference. The code in ```preprocessing/``` was used to generate the dataset described below. 
+
+### Code development 
+Code was developed on macOS 26.6.1 with Python 3.12.2.
 
 ## Dataset
 
